@@ -23,9 +23,9 @@ a{
     gap: 2rem;
 }
 
-#top-nav-links{
+#top-nav__links{
     display: flex;
-    align-items: end;
+    gap: 1rem;
 }
 
 .link{
