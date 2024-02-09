@@ -14,7 +14,17 @@
             <div class="list">
             {% for project in projects %}
                 <div class="project-card">
-                    <h3 class="project-card_title">{{ project.title }}</h3>
+                    <div class="project-card_wrapper">
+                        <h3 class="project-card_title">{{ project.title }}</h3>
+                        {% if project.status == 'IDEA' %}
+                            <small class="project-card_status text-green">{{ project.status|capitalize }}</small>
+                        {% elseif project.status == 'IN_PROGRESS'%}
+                            <small class="project-card_status text-yellow">{{ project.status|capitalize }}</small>
+                        {% elseif project.status == 'FINISHED' %}
+                            <small class="project-card_status text-red">{{ project.status|capitalize }}</small>
+                        {% endif %}
+
+                    </div>
                     <div class="project-card_actions">
                         <a class="btn btn__primary" href="{{ path('app_project_show', {id: project.id}) }}">show</a>
                     </div>
