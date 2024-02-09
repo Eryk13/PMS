@@ -129,12 +129,12 @@ footer{
 .btn{
     padding: .6em 1.6em;
     border-radius: .8rem;
-    border: solid 2px var(--color2);
+    border: solid 2px transparent;
 }
+
 .btn:hover{
     cursor: pointer;
 }
-
 .btn__primary{
     background-color: var(--color4);
     color: white;
