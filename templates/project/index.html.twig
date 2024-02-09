@@ -3,37 +3,26 @@
 {% block title %}Project index{% endblock %}
 
 {% block body %}
-    <h1>Project index</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for project in projects %}
-            <tr>
-                <td>{{ project.id }}</td>
-                <td>{{ project.title }}</td>
-                <td>{{ project.description }}</td>
-                <td>{{ project.status }}</td>
-                <td>
-                    <a href="{{ path('app_project_show', {'id': project.id}) }}">show</a>
-                    <a href="{{ path('app_project_edit', {'id': project.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('app_project_new') }}">Create new</a>
+    <main class="main">
+        <div class="main_wrapper">
+            <div class="main_header">
+                <h1 class="main_title">Projects</h1>
+                <div class="main_header_wrapper">
+                    <a class="btn btn__primary" href="{{ path('app_project_new') }}">Create new</a>
+                </div>
+            </div>
+            <div class="list">
+            {% for project in projects %}
+                <div class="project-card">
+                    <h3 class="project-card_title">{{ project.title }}</h3>
+                    <div class="project-card_actions">
+                        <a class="btn btn__primary" href="{{ path('app_project_show', {id: project.id}) }}">show</a>
+                    </div>
+                </div>
+            {% else %}
+                <h3>No projects found</h3>
+            {% endfor %}
+            </div>
+        </div>
+    </main>
 {% endblock %}
