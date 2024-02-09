@@ -29,6 +29,9 @@ ul{
 a{
     text-decoration: none;
 }
+button{
+    font-size: 1rem;
+}
 
 footer{
     padding: 0 2em;
@@ -148,6 +151,36 @@ footer{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+}
+
+/* || FORM */
+
+.input-text{
+    padding: 1em;
+    border-radius: .8rem;
+}
+
+.input-select{
+    padding: 1em;
+    border-radius: .8rem;
+}
+
+.input-select_project{
+    width: 50%;
+}
+form{
+    color: white;
+}
+
+form > div > div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form_actions{
+    margin: 1rem 0;
 }
 
 
