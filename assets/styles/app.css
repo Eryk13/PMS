@@ -1,10 +1,19 @@
+:root{
+    --color1: #0F0F0F;
+    --color2: #232D3F;
+    --color3: #005B41;
+    --color4: #008170;
+}
+
 html{
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: skyblue;
-    padding: 1em;
+    margin: 0;
+    background: rgb(15,15,15);
+    background: linear-gradient(120deg, rgba(15,15,15,1) 0%, rgba(0,91,65,1) 60%, rgba(28,34,45,1) 90%);
+    height: 100vh;
 }
 
 ul{
@@ -21,6 +30,7 @@ a{
     display: flex;
     align-items: end;
     gap: 2rem;
+    padding: 2em;
 }
 
 #top-nav__links{
@@ -33,12 +43,12 @@ a{
 }
 .link:hover{
     cursor: pointer;
-    color: gray;
+    color: lightgray;
 }
 
 .logo {
     font-size: 1.4rem;
-    color: red;
+    color: var(--color4);
 }
 
 
