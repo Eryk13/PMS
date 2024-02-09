@@ -28,6 +28,11 @@
                 </li>
             </ul>
         </nav>
-        {% block body %}{% endblock %}
+        <div class="content">
+            {% block body %}{% endblock %}
+        </div>
+        <footer>
+            Copyright &copy {{ "now"|date("Y") }}
+        </footer>
     </body>
 </html>

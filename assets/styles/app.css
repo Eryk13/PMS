@@ -16,6 +16,8 @@ body {
     background: rgb(15,15,15);
     background: linear-gradient(120deg, rgba(15,15,15,1) 0%, rgba(0,91,65,1) 60%, rgba(28,34,45,1) 90%);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 ul{
@@ -26,6 +28,19 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+footer{
+    padding: 0 2em;
+    background-color: var(--color2);
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.content{
+    flex: 1;
 }
 
 /* || TOP NAV */
