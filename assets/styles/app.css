@@ -91,6 +91,8 @@ footer{
 }
 .main_title{
     color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .main_wrapper {
@@ -127,6 +129,8 @@ footer{
     flex: 1;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-card_actions{
@@ -152,6 +156,8 @@ footer{
     padding: .6em 1.6em;
     border-radius: .8rem;
     border: solid 2px transparent;
+    display: flex;
+    align-items: center;
 }
 
 .btn:hover{

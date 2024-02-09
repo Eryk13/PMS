@@ -2,6 +2,6 @@
     {{ form_widget(form) }}
     <div class="form_actions">
         <button type="submit" class="btn btn__primary">{{ button_label|default('Save') }}</button>
-        <a type="button" class="btn btn__warning" href="{{ path('app_project_index') }}">{{ button_label|default('Cancel') }}</a>
+        <a type="button" class="btn btn__warning" href="{{ cancel_path|default(path('app_project_index')) }}">Cancel</a>
     </div>
 {{ form_end(form) }}
