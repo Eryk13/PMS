@@ -22,6 +22,14 @@ class ProjectController extends AbstractController
         ]);
     }
 
+    #[Route('/idea', name: 'app_project_idea', methods: ['GET'])]
+    public function idea(ProjectRepository $projectRepository): Response
+    {
+        return $this->render('project/index.html.twig', [
+            'projects' => $projectRepository->findAll(),
+        ]);
+    }
+
     #[Route('/new', name: 'app_project_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
