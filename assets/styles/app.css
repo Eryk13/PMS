@@ -190,7 +190,10 @@ form > div > div{
 }
 
 .form_actions{
-    margin: 1rem 0;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
 }
 
 
