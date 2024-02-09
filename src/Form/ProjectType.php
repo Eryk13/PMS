@@ -32,6 +32,7 @@ class ProjectType extends AbstractType
                 'choices' => [
                     'idea' => 'IDEA',
                     'in progress' => 'IN_PROGRESS',
+                    'finished' => 'FINISHED'
                 ],
                 'attr' => [
                     'class' => 'input-select input-select_project'
