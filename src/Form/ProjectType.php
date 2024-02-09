@@ -26,7 +26,8 @@ class ProjectType extends AbstractType
                     'class' => 'input-text',
                     'rows' => '20'
                 ],
-                'label' => 'Description (markdown)'
+                'label' => 'Description (markdown)',
+                'required' => false
             ])
             ->add('status', ChoiceType::class, [
                 'choices' => [
