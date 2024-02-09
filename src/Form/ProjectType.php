@@ -24,7 +24,7 @@ class ProjectType extends AbstractType
             ->add('description', TextareaType::class, [
                 'attr' => [
                     'class' => 'input-text',
-                    'rows' => '50'
+                    'rows' => '20'
                 ],
                 'label' => 'Description (markdown)'
             ])
