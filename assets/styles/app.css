@@ -5,6 +5,8 @@
     --color2: #232D3F;
     --color3: #005B41;
     --color4: #008170;
+    --color5: #ff4545;
+    --color6: #ff0f0f
 }
 
 html{
@@ -142,7 +144,15 @@ footer{
 .btn__primary:hover{
     background-color: var(--color3);
     border: solid 2px var(--color3);
-
+}
+.btn__warning{
+    background-color: var(--color5);
+    color: white;
+}
+.btn__warning:hover{
+    background-color: var(--color6);
+    border: solid 2px var(--color6);
+    color: white;
 }
 
 /* || LIST */
