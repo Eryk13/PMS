@@ -42,7 +42,9 @@ footer{
     display: flex;
     align-items: center;
     color: white;
+    margin-top: 1rem;
 }
+
 
 .content{
     flex: 1;
@@ -85,13 +87,17 @@ footer{
     display: flex;
     justify-content: center;
     width: 100%;
+    min-height: 90vh;
 }
 .main_title{
     color: white;
 }
 
 .main_wrapper {
+    display: flex;
+    flex-direction: column;
     width: 70%;
+    min-height: 100%;
 }
 
 .main_header{
@@ -102,6 +108,7 @@ footer{
 .main_header_wrapper{
     display: flex;
     align-items: end;
+    gap: 1rem;
     padding: 1em;
 }
 
@@ -125,6 +132,19 @@ footer{
 .project-card_actions{
     display: flex;
 }
+
+/* PROJECT DETAIL */
+
+.project-detail{
+    background-color: var(--color2);
+    border-radius: .8rem;
+    padding: 2em;
+    color: white;
+    flex-grow: 1;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
 
 /* || BUTTON */
 
