@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Project index{% endblock %}
+{% block title %}Projects{% endblock %}
 
 {% block body %}
     <main class="main">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             {% else %}
-                <h3>No projects found</h3>
+                <h3 class="text-info">No projects found</h3>
             {% endfor %}
             </div>
         </div>
