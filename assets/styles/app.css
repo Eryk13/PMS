@@ -1,10 +1,10 @@
 /* || GENERAL STYLES */
 
 :root{
-    --color1: #0F0F0F;
-    --color2: #232D3F;
-    --color3: #005B41;
-    --color4: #008170;
+    --color1: #222831;
+    --color2: #393E46;
+    --color3: #00ADB5;
+    --color4: #EEEEEE;
     --color5: #ff4545;
     --color6: #ff0f0f
 }
@@ -15,8 +15,6 @@ html{
 
 body {
     margin: 0;
-    background: rgb(15,15,15);
-    background: linear-gradient(120deg, rgba(15,15,15,1) 0%, rgba(0,91,65,1) 60%, rgba(28,34,45,1) 90%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,7 +35,7 @@ button{
 
 footer{
     padding: 0 2em;
-    background-color: var(--color2);
+    background-color: var(--color3);
     min-height: 10vh;
     display: flex;
     align-items: center;
@@ -67,18 +65,22 @@ footer{
 /* || LINKS */
 
 .link{
-    color: white;
+    color: black;
 }
 .link:hover{
     cursor: pointer;
-    color: lightgray;
+    color: gray;
+}
+
+.link-wrapper{
+    color: black;
 }
 
 /* || BRANDING */
 
 .logo {
     font-size: 1.4rem;
-    color: var(--color4);
+    color: var(--color3);
 }
 
 /* || MAIN */
@@ -90,7 +92,6 @@ footer{
     min-height: 90vh;
 }
 .main_title{
-    color: white;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -117,15 +118,18 @@ footer{
 /* || PROJECT CARD */
 
 .project-card{
-    border-radius: .8rem;
-    padding: 1.5em;
-    background-color: var(--color2);
+    padding: 1em;
     display: flex;
+    border-bottom: 2px solid var(--color2);
+}
+.project-card:hover{
+    background: var(--color4);
+    cursor: pointer;
+    border-bottom: 2px solid var(--color3);
 }
 
 .project-card_title{
     margin: 0;
-    color: white;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -140,16 +144,11 @@ footer{
     flex: 1;
 }
 .project-card_status{
-    color: white;
 }
 
 /* PROJECT DETAIL */
 
 .project-detail{
-    background-color: var(--color2);
-    border-radius: .8rem;
-    padding: 2em;
-    color: white;
     flex-grow: 1;
     max-height: 90vh;
     overflow-y: auto;
@@ -161,7 +160,7 @@ footer{
 .btn{
     padding: .6em 1.6em;
     border-radius: .8rem;
-    border: solid 2px transparent;
+    border: solid 2px white;
     display: flex;
     align-items: center;
 }
@@ -170,12 +169,12 @@ footer{
     cursor: pointer;
 }
 .btn__primary{
-    background-color: var(--color4);
+    background-color: var(--color3);
     color: white;
 }
 .btn__primary:hover{
-    background-color: var(--color3);
-    border: solid 2px var(--color3);
+    background-color: var(--color2);
+    border: solid 2px var(--color2);
 }
 .btn__warning{
     background-color: var(--color5);
@@ -207,11 +206,8 @@ footer{
     border-radius: .8rem;
 }
 
-.input-select_project{
+.input-select_project {
     width: 50%;
-}
-form{
-    color: white;
 }
 
 form > div > div{
@@ -236,10 +232,9 @@ form > div > div{
     color: var(--color5);
 }
 .text-yellow{
-    color: #FFFF00;
+    color: var(--color2);
 }
 .text-info{
-    color: white;
     text-align: center;
 }
 
